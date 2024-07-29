@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/elisilk/results-summary-component](https://github.com/elisilk/results-summary-component)
-- Live Site URL: [https://elisilk.github.io/results-summary-component/](https://elisilk.github.io/results-summary-component/)
+- Solution URL: [https://github.com/elisilk/advice-generator-app-main](https://github.com/elisilk/advice-generator-app-main)
+- Live Site URL: [https://elisilk.github.io/advice-generator-app-main/](https://elisilk.github.io/advice-generator-app-main/)
 
 ## My process
 
