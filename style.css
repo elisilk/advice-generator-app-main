@@ -1,0 +1,123 @@
+:root {
+  --ff-sans: "Manrope", sans-serif;
+
+  --fw-bold: 800;
+
+  --fs-200: 0.625rem; /* 11px ID mobile */
+  --fs-300: 1rem; /* 16px ID desktop */
+  --fs-400: 1.5rem; /* 24px Quote mobile */
+  --fs-500: 1.75rem; /* 28px Quote desktop */
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-400: hsl(212, 45%, 89%);
+
+  --clr-cyan: hsl(193, 38%, 86%);
+  --clr-green: hsl(150, 100%, 66%);
+
+  --clr-gray-blue: hsl(217, 19%, 38%);
+  --clr-dark-gray-blue: hsl(217, 19%, 24%);
+  --clr-dark-blue: hsl(218, 23%, 16%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+html {
+  background-color: var(--clr-dark-blue);
+  font-family: var(--ff-sans);
+}
+
+main {
+  margin-block: 7.5rem;
+  margin-inline: auto;
+  min-width: 375px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  min-width: calc(375px - 2rem);
+  max-width: 540px;
+  margin-inline: 1rem;
+  border-radius: 10px;
+  position: relative;
+  background-color: var(--clr-dark-gray-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 1.5rem;
+  padding-block-start: 1rem;
+}
+
+.card__title {
+  color: var(--clr-green);
+  text-transform: uppercase;
+  margin-block-start: 25px;
+  font-size: var(--fs-200);
+  letter-spacing: 4px;
+}
+
+.card__description {
+  color: var(--clr-cyan);
+  text-align: center;
+  margin-block-start: 25px;
+  font-size: var(--fs-400);
+  letter-spacing: -0.5px;
+  background: no-repeat bottom url(images/pattern-divider-mobile.svg);
+  padding-block-end: 40px;
+}
+
+.card__btn {
+  color: var(--clr-dark-blue);
+  background-color: var(--clr-green);
+  padding: 20px;
+  border-radius: 50%;
+  border: none;
+  position: relative;
+  transform: translateY(50%);
+}
+
+.card__btn:hover,
+.card__btn:active {
+  box-shadow: 0 0 32px var(--clr-green) /* outer white */;
+}
+
+@media (min-width: 736px) {
+  main {
+    margin-block: 14rem;
+  }
+
+  .card {
+    min-width: 540px;
+    padding-inline: 42px;
+  }
+
+  .card__title {
+    margin-block-start: 30px;
+    font-size: 13px;
+    letter-spacing: 3.75px;
+  }
+
+  .card__description {
+    margin-block-start: 26px;
+    font-size: 27px;
+    letter-spacing: 0.15px;
+    line-height: 1.41;
+    background: no-repeat bottom url(images/pattern-divider-desktop.svg);
+    padding-block-end: 56px;
+    margin-block-end: 7px;
+  }
+}
